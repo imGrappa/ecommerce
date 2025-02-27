@@ -7,6 +7,7 @@ import {
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import axios from "axios";
+import { Link } from "react-router";
 
 function Basket() {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ function Basket() {
       <div className="text-center py-10">
         <h2 className="text-2xl font-semibold">Sepetiniz Boş</h2>
         <p>Sepetinize ürün eklemek için alışverişe devam edebilirsiniz.</p>
+        <Link to="/">Alışverişe Devam Et</Link>
       </div>
     );
   }
